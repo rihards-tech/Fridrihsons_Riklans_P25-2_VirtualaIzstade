@@ -3,12 +3,17 @@
   VIRTUĀLĀ IZSTĀDE — MŪZIKAS VĒSTURE
 ========================================
 
-  GALVENĀ KRĀSU PALETE
+  KRĀSU PALETE
 
   #171717 — Galvenais tumšais fons
   #F5F1E8 — Gaišais teksts
-  #C19A6B — Zelta akcents (pogas, saites)
-  #383838 — Kartīšu un sekundārais fons
+  #C19A6B — Zelta akcents
+  #383838 — Sekundārais fons
+
+  FONTI
+
+  Georgia — Virsraksti
+  Arial — Pamatteksts
 
 ========================================
 */
@@ -18,6 +23,62 @@
   --color-text: #f5f1e8;
   --color-accent: #c19a6b;
   --color-surface: #383838;
+
+  --font-heading: Georgia, serif;
+  --font-body: Arial, sans-serif;
+
+  --container-width: 1200px;
+}
+
+/* ===== PAMATA STILI ===== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+/* ===== KOPĪGAIS KONTEINERS ===== */
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin-inline: auto;
+  padding-inline: 20px;
 }
 /* ===== PAMATA STILI ===== */
 
