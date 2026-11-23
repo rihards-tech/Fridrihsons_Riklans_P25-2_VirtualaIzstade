@@ -9,7 +9,36 @@
 </head>
 <body>
   <header class="header" id="sakums">
-    <!-- Galvene un navigācija -->
+    <div class="container header__container">
+      <a class="header__logo" href="index.html">
+        Mūzikas vēsture
+      </a>
+
+      <button
+        class="header__toggle"
+        type="button"
+        aria-label="Atvērt navigāciju"
+        aria-expanded="false"
+        aria-controls="header-nav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav
+        class="header__nav"
+        id="header-nav"
+        aria-label="Galvenā navigācija"
+      >
+        <ul class="header__list">
+          <li><a class="header__link" href="#sakums">Sākums</a></li>
+          <li><a class="header__link" href="#par-izstadi">Par izstādi</a></li>
+          <li><a class="header__link" href="#galerija">Galerija</a></li>
+          <li><a class="header__link" href="#karuselis">Laikmeti</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
