@@ -263,6 +263,139 @@ a {
 
 /* ===== GALLERY ===== */
 
+/* ===== GALLERY ===== */
+
+.gallery {
+  padding: 80px 0;
+}
+
+.gallery__title {
+  margin-bottom: 40px;
+  font-size: 42px;
+  text-align: center;
+}
+
+.gallery__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.gallery__item {
+  min-width: 0;
+}
+
+.gallery__images {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.gallery__image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.gallery__accordion {
+  display: block;
+  width: 100%;
+  padding: 18px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  font-size: 16px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.gallery__accordion.active {
+  background-color: var(--color-accent);
+  color: var(--color-background);
+}
+
+.gallery__panel {
+  display: none;
+  padding: 20px;
+  background-color: #252525;
+  overflow: hidden;
+}
+
+.gallery__panel p {
+  margin: 0;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* ===== GALLERY HOVER ===== */
+
+@media (hover: hover) {
+  .gallery__accordion {
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
+  }
+
+  .gallery__accordion:hover {
+    background-color: var(--color-accent);
+    color: var(--color-background);
+  }
+}
+
+/* ===== GALLERY RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+  .gallery {
+    padding: 60px 0;
+  }
+
+  .gallery__title {
+    font-size: 34px;
+  }
+
+  .gallery__images {
+    gap: 10px;
+  }
+
+  .gallery__image {
+    height: 260px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    padding: 50px 0;
+  }
+
+  .gallery__title {
+    font-size: 30px;
+  }
+
+  .gallery__grid {
+    gap: 30px;
+  }
+
+  .gallery__images {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery__image {
+    height: 280px;
+  }
+
+  .gallery__accordion {
+    padding: 15px;
+    font-size: 15px;
+  }
+
+  .gallery__panel {
+    padding: 15px;
+  }
+}
+
 /* ===== CAROUSEL ===== */
 
 /* ===== FOOTER ===== */
