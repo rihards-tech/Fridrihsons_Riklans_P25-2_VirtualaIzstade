@@ -8,7 +8,7 @@
   <title>Mūzikas vēsture | Virtuālā izstāde</title>
 </head>
 <body>
-  <header class="header" id="sakums">
+  <header class="header">
     <div class="container header__container">
       <a class="header__logo" href="index.html">
         Mūzikas vēsture
@@ -17,9 +17,6 @@
       <button
         class="header__toggle"
         type="button"
-        aria-label="Atvērt navigāciju"
-        aria-expanded="false"
-        aria-controls="header-nav"
       >
         <span></span>
         <span></span>
@@ -29,13 +26,13 @@
       <nav
         class="header__nav"
         id="header-nav"
-        aria-label="Galvenā navigācija"
       >
         <ul class="header__list">
           <li><a class="header__link" href="#sakums">Sākums</a></li>
           <li><a class="header__link" href="#par-izstadi">Par izstādi</a></li>
           <li><a class="header__link" href="#galerija">Galerija</a></li>
-          <li><a class="header__link" href="#karuselis">Laikmeti</a></li>
+          <li><a class="header__link" href="#audio">Skaņdarbi</a></li>
+          <li><a class="header__link" href="#karuselis">Komponisti</a></li>
         </ul>
       </nav>
     </div>
@@ -74,7 +71,6 @@
       <div class="container">
         <div class="about__content">
           <div class="about__left">
-            <!-- Informācija par izstādi -->
             <h2 class="about__title">Par izstādi</h2>
             
             <p class="about__text">
@@ -90,7 +86,6 @@
             </ul>
           </div>
           <div class="about__right">
-            <!-- Attēls vai cits vizuālais saturs -->
             <img src="images/about.jpg" alt="Mūzikas vēstures periodi" class="about__image">
           </div>
         </div>
@@ -207,9 +202,6 @@
         </div>
       </div>
     </section>
-
-
-    <!-- ===== AUDIO ===== -->
 
     <section class="audio" id="audio">
       <div class="container">
@@ -329,7 +321,6 @@
           <button
             class="carousel__autoplay"
             type="button"
-            aria-pressed="false"
           >
             Apturēt pārslēgšanu
           </button>
