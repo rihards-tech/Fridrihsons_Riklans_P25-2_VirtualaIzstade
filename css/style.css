@@ -554,5 +554,27 @@ a {
 /* ===== CAROUSEL ===== */
 
 /* ===== FOOTER ===== */
+.footer {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #252525;
+  padding: 20px 0;
+}
+
+.footer__author {
+  margin: 0 0 5px 0;
+}
+
+.footer__link {
+  color: var(--color-accent);
+}
+
+.footer__copyright {
+  margin: 25px 0 0 0;
+}
 
 /* ===== RESPONSĪVAIS DIZAINS ===== */
